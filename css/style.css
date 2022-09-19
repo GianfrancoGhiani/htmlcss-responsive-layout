@@ -16,3 +16,47 @@
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
+
+
+/* repetitive stuff */
+.flex{
+	display: flex;
+}
+.j-btwn{
+	justify-content: space-between;
+}
+.a-cnt{
+	align-items: center;
+}
+li{
+	list-style: none;
+}
+.btn{
+	padding: .5em .8em;
+	border-radius: 1.5em;
+}
+/* specific selectors */
+.top-bar{
+	background-color: var(--blue);
+	font-weight: 400;
+	padding: .7em 1.5em;
+}
+.top-bar a{
+	text-decoration: none;
+}
+.wt-txt{
+	color: var(--wt);
+}
+.blk-txt{
+	color: var(--blk);
+}
+.wrapper{
+	max-width: 100%;
+}
+.bg-wt{
+	background-color: var(--wt);
+}
+.top-bar ul{
+	width: 30%;
+	display: none;
+}
