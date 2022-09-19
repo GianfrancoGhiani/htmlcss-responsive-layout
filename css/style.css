@@ -34,8 +34,6 @@
 .wrap{
 	flex-wrap: wrap;
 }
-
-
 li{
 	list-style: none;
 }
@@ -46,6 +44,21 @@ li{
 }
 .title{
 	font-size: 2em;
+}
+.txt-cnt{
+	text-align: center;
+}
+.wt-txt{
+	color: var(--wt);
+}
+.blk-txt{
+	color: var(--blk);
+}
+.bg-wt{
+	background-color: var(--wt);
+}
+.bg-vio{
+	background-color: var(--violet);
 }
 /* specific selectors */
 
@@ -62,18 +75,11 @@ li{
 .top-bar a{
 	text-decoration: none;
 }
-.wt-txt{
-	color: var(--wt);
-}
-.blk-txt{
-	color: var(--blk);
-}
+
 .wrapper{
 	max-width: 100%;
 }
-.bg-wt{
-	background-color: var(--wt);
-}
+
 .top-bar ul{
 	width: 30%;
 	display: none;
@@ -125,30 +131,62 @@ section{
 }
 
  /* second section */
-#planning{
-	background-color: var(--violet);
-}
 #planning img{
 	width: 100%;
 }
-#planning p{
+p{
 	line-height: 2em;
 	margin: 2em 0;
 }
-#planning .sub{
-	text-align: center;
+.sub{
 	padding: 1.5em;
 	border-radius: 3em;
 }
 #planning .sub p{
 	font-style: italic;
-	/* line-height: 2em; */
 }
 .arrow{
 	display: inline-block;
 	line-height: 3em;
 	width: 3em;
 	height: 3em;
-	background-color: var(--violet);
 	border-radius: 50%;
+}
+
+/* third section */
+#testimonials h2{
+	color: var(--violet);
+	margin-top: 1em;
+}
+.caps{
+	text-transform: uppercase;
+}
+.user{
+	width: 100%;
+	margin: 1.5em 0;
+}
+.face{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	/* background-image: url(../img/testimonial1.jpg); */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.nat{
+	background-image: url(../img/testimonial1.jpg);
+}
+.celia{
+	background-image: url(../img/testimonial2.jpg);
+}
+.bob{
+	background-image: url(../img/testimonial3.jpg);
+}
+.user .caps{
+	letter-spacing: .1em;
+	font-weight: bold;
+	margin: 1em 0;
 }
