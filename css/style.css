@@ -1,0 +1,18 @@
+/* general */
+:root{
+	--wt: white;
+	--blk: black;
+	--heavenly: #B5DDFF;
+	--blue: #0084FD;
+	--dark-grey: #333333;
+	--violet: #9792E4;
+	--not-wt: #F4F4F4;
+	--amber: #FDC15F;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
