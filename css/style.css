@@ -9,6 +9,7 @@
 	--not-wt: #F4F4F4;
 	--amber: #FDC15F;
 	--card-txt: #5a6e7f;
+	--gets-vio: #d5d4f4;
 }
 
 *{
@@ -205,6 +206,8 @@ p{
 .numb{
 	font-size: 2.5em;
 }
+
+/* fifth section */
 .ref .face{
 	background-image: url(../img/about.jpg);
 	position: relative;
@@ -222,4 +225,29 @@ p{
 .ref span::before{
 	content: '\f08c';
 	font-family: "Font Awesome 6 Brands";
+}
+
+/* sixth section */
+#get-started .caps{
+	color:var(--gets-vio);
+}
+
+#special{
+	font-size: 3em;
+	color: var(--amber);
+}
+#get-started .btn{
+	padding: 1em 0.8em;
+	border-radius: 2em;
+	font-weight: bold;
+	font-size: 1.2em;
+	letter-spacing: .1em;
+	width: 15em;
+	margin-bottom: 1em;
+}
+.copy{
+	font-size: .8rem;
+}
+.copy span{
+	text-decoration: underline;
 }
