@@ -8,6 +8,7 @@
 	--violet: #9792E4;
 	--not-wt: #F4F4F4;
 	--amber: #FDC15F;
+	--card-txt: #5a6e7f;
 }
 
 *{
@@ -19,6 +20,8 @@
 
 
 /* repetitive stuff */
+
+
 .flex{
 	display: flex;
 }
@@ -28,18 +31,33 @@
 .a-cnt{
 	align-items: center;
 }
+.wrap{
+	flex-wrap: wrap;
+}
+
+
 li{
 	list-style: none;
 }
 .btn{
 	padding: .5em .8em;
 	border-radius: 1.5em;
+	cursor: pointer;
+}
+.title{
+	font-size: 2em;
 }
 /* specific selectors */
+
+/* top-bar */
 .top-bar{
 	background-color: var(--blue);
 	font-weight: 400;
 	padding: .7em 1.5em;
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
 }
 .top-bar a{
 	text-decoration: none;
@@ -59,4 +77,78 @@ li{
 .top-bar ul{
 	width: 30%;
 	display: none;
+}
+
+/* first section */
+.card{
+	background-color: var(--heavenly);
+	border-radius: 1.5em;
+	margin: 1em;
+}
+section{
+	padding: 4rem 1.5rem;
+}
+.frst-section{
+	margin-top: 5em;
+	/* padding: 1.5em 1em; */
+}
+
+.card-txt{
+	padding: 1.5em;
+	text-align: center;
+}
+.frst-card{
+	text-align: left;
+}
+.card-txt h2, .icon{
+	color: var(--blue);
+}
+.card-txt p{
+	margin: 1.5em 0;
+	color: var(--card-txt);
+	font-weight: bold;
+}
+.card-txt .btn{
+	background-color: var(--blue);
+	font-weight: bold;
+	text-align: center;
+	width: 10em;
+	letter-spacing: .1em;
+}
+.card img{
+	width: 100%;
+	margin-bottom: -5px;
+}
+.icon i{
+	font-size: 5em;
+	margin: .2em 0 0.5em;
+}
+
+ /* second section */
+#planning{
+	background-color: var(--violet);
+}
+#planning img{
+	width: 100%;
+}
+#planning p{
+	line-height: 2em;
+	margin: 2em 0;
+}
+#planning .sub{
+	text-align: center;
+	padding: 1.5em;
+	border-radius: 3em;
+}
+#planning .sub p{
+	font-style: italic;
+	/* line-height: 2em; */
+}
+.arrow{
+	display: inline-block;
+	line-height: 3em;
+	width: 3em;
+	height: 3em;
+	background-color: var(--violet);
+	border-radius: 50%;
 }
