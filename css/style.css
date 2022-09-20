@@ -111,7 +111,7 @@ section{
 	padding: 1.5em;
 	text-align: center;
 }
-.frst-card{
+.frst-card .card-txt{
 	text-align: left;
 }
 .card-txt h2, .icon{
@@ -131,7 +131,7 @@ section{
 }
 .card img{
 	width: 100%;
-	margin-bottom: -5px;
+	display: block;
 }
 .icon i{
 	font-size: 5em;
@@ -323,10 +323,21 @@ footer span {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		/* align-items: flex-end; */
 	}
 	.frst-section .card-img img{
 		width: 100%;
+	}
+	.frst-card{
+		display: flex;
+	}
+	.frst-card .card-txt{
+		align-self: flex-start;
+		width:calc(60% - 3em);
+
+	}
+	.frst-card .card-img{
+		align-self: flex-end;
+		width: 40%;
 	}
 	#planning .wrapper{
 		display: flex;
@@ -356,6 +367,9 @@ footer span {
 @media screen and (min-width:1200px){
 	.wrapper{
 		max-width: 1140px;
+	}
+	.frst-card .card-txt{
+		align-items: center;
 	}
 	.top-bar i{
 		display: none;
