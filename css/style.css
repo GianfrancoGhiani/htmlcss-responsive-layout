@@ -23,7 +23,6 @@
 
 /* repetitive stuff */
 
-
 .flex{
 	display: flex;
 }
@@ -83,8 +82,29 @@ li{
 	width: 100%;
 	z-index: 1000;
 }
-.top-bar a{
+.top-bar i{
+	cursor: pointer;
+}
+.top-bar input{
+	display: none;
+}
+#menu:checked ~ ul{
+	display: block;
+	position: absolute;
+	text-align: center;
+	width: 10rem;
+	top: 4.5rem;
+	right:2rem;
+	z-index: 2000;
+	background-color: var(--not-wt);
+}
+.top-bar li:hover{
+	box-shadow: inset 0px -2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+.top-bar li a{
 	text-decoration: none;
+	color: var(--blk);
+	line-height: 2rem;
 }
 
 .wrapper{
@@ -342,6 +362,7 @@ footer span {
 	#planning .wrapper{
 		display: flex;
 		align-items: flex-end;
+		justify-content: space-between;
 	}
 	#planning .wt-txt{
 		width:50%;
@@ -374,6 +395,21 @@ footer span {
 	.top-bar i{
 		display: none;
 	}
+	.top-bar li:hover{
+		box-shadow: none;
+	}
+	.top-bar li a{
+		color: var(--wt);
+	}
+	.top-bar .btn{
+		padding: .5em .8em;
+		border-radius: 1.5em;
+		cursor: pointer;
+		display: inline-block;
+		background-color: var(--wt);
+		color: var(--blk);
+	}
+	
 	.top-bar ul{
 		display: flex;
 	}
